@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Busca de endereço</title>
+    <script src="public/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="public/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+    <script src="public/node_modules/jquery.js"></script>
+    <script src="public/node_modules/jquery-mask.js"></script>
+    <link rel="stylesheet" href="public/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="public/node_modules/sweetalert2/dist/sweetalert2.css">
+    <link rel="stylesheet" href="public/css/custom.css">
+    <script src="public/js/script.js"></script>
+</head>
+<body>
+    <header class = "site-header">
+        <div class = "container">
+            <div class = "header-logo">
+                <img src = "https://procurarcep.com.br/wp-content/themes/procurarcep_2020/assets/images/pin.svg" width="35px" height="35px">
+                    <span>Procurar CEP</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Campo de busca -->
+        <div class="row">
+            <div class="form-group search-container">
+                <div class="row">
+                    <div class="col-10">
+                        <input id="cep" type="text" class="form-control" placeholder="Informe o CEP">
+                    </div>
+                    <div class="col-2" style="text-align: right">
+                        <button class="btn btn-light" onclick="buscaEndereco()">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <!-- Resultado da consulta -->
+        <div class="row" id="result_consulta">
+            <div class="col-12" style="margin-top: 3%;">
+                <div class="item">
+                    <h4>Seu endereço</h4>
+                    <hr>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="form-group">
+                                    <label for="localidade">Localidade</label>
+                                    <input type="text" name="localidade" id="localidade" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-group">
+                                    <label for="uf">UF</label>
+                                    <input type="text" name="uf" id="uf" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="logradouro">Logradouro</label>
+                                    <input type="text" name="logradouro" id="logradouro" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="bairro">Bairro</label>
+                                    <input type="text" name="bairro" id="bairro" class="form-control" disabled>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="complemento">Complemento</label>
+                                    <input type="text" name="complemento" id="complemento" class="form-control" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

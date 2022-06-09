@@ -1,0 +1,90 @@
+body {
+    background-color: #282370;
+    padding-bottom: 10%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9c9c9c !important;
+    opacity: 1 !important; /* Firefox */
+}
+.cursor-pointer { cursor: pointer }
+.search-container {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px -5px #cccccc;
+    border: 1px solid #0000000d;
+    margin-top: 40px;
+}
+.search-container > .row > [class^="col"] .form-control {
+    border: none;
+}
+.search-container > .row > [class^="col"] > .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+.search-container > .form-select {
+    border: none;
+}
+.search-container > .form-select:focus {
+    outline: none;
+    box-shadow: none;
+}
+.limite-pokemon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.item {
+    background: white;
+    cursor: pointer;
+    border-radius: 10px;
+    min-height: 150px;
+    width: 100%;
+    box-shadow: 0 2px 5px -5px #cccccc;
+    border: 1px solid #0000000d;
+    padding: 20px;
+    -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.item:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transform: scale(1.1) rotate(0deg) ;
+    -webkit-transform: scale(1.1) rotate(0deg) ;
+    -o-transform: scale(1.1) rotate(0deg) ;
+    -ms-transform: scale(1.1) rotate(0deg) ;
+    transform: scale(1.1) rotate(0deg);
+}
+
+.site-header {
+    background-color: #000000;
+    height: 60px;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+span, strong {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    margin-top: 3px;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
